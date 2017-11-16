@@ -1,10 +1,7 @@
 ## Put comments here that give an overall description of what your functions do
-
-## make a "special Matrix" by makeCacheMatrix. It's actully a list.Then, use the cacheSolve function to
-## calculate the inverse of the matrix of makeCacheMatrix or get the cached data(if it exist.)
-
+## Get the inverse of matrix and cache it. 
 ## Write a short comment describing this function
-
+## make a "special Matrix" by makeCacheMatrix. Well,It's actully a list.
 makeCacheMatrix <- function(x = matrix()) { 
   m <- NULL
 set <- function(y) {
@@ -23,7 +20,8 @@ list(set = set,
 
 
 ## Write a short comment describing this function
-
+## Use the cacheSolve function to
+## calculate the inverse of the matrix of makeCacheMatrix or Get the cached data(if it exist.)
 cacheSolve <- function(x, ...) {
   m <- x$getinverse()
   if(!is.null(m)) {
